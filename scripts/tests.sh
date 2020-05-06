@@ -1,0 +1,1 @@
+sudo docker exec djangoapp python manage.py test

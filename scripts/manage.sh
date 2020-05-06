@@ -1,0 +1,1 @@
+sudo docker exec -t djangoapp python manage.py $1

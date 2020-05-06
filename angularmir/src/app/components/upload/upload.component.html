@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <!-- <p [ngClass]="{ 'has-error': isSubmitted && formControls.name.errors }">
+      <input type="name" placeholder="Document Name" formControlName="name">
+    </p> -->
+    <!-- <div *ngIf="isSubmitted && formControls.name.errors" class="help-block">
+      <div *ngIf="formControls.name.errors.required">Document Name is required</div>
+    </div> -->
+    <input type="file" name="upload" (change)="onChange($event)" />
+    <button type="submit">Upload Document File</button>
+  </form>
+  <div *ngIf="response && imageURL">
+    <img [src]='imageURL' />
+  </div>

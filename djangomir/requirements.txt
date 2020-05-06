@@ -1,0 +1,7 @@
+Django==2.2.8
+gunicorn==19.9.0
+psycopg2-binary==2.8.3
+django-crispy-forms==1.8.0
+sqlparse==0.3.0
+pytz==2019.3
+boto3==1.9.111
